@@ -1,0 +1,358 @@
+@import "../null.scss"; //null
+@import "../variables"; //breakpoints
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 36px;
+    /* identical to box height, or 97% */
+
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.56);
+
+}
+
+.text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+    /* or 130% */
+
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 23px 0;
+
+    margin: 0 auto;
+
+    @include breakpoint (sm) {
+        padding: 23px 20px;
+    }
+
+    &-left {
+        display: flex;
+        align-items: flex-start;
+
+        &-p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 22px;
+            /* identical to box height, or 69% */
+
+            color: #2E2E2E;
+            margin-left: 13px;
+        }
+    }
+
+    &-right {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-right: 19px;
+        }
+    }
+}
+
+.first {
+    margin: 0 auto;
+
+    background: #FAC960;
+
+    @include breakpoint (md) {
+        padding: 20px;
+    }
+
+    &-inner {
+        width: 100%;
+        max-width: 940px;
+        padding: 115px 0;
+
+        @include breakpoint (sm) {
+            padding: 57px 0;
+        }
+
+        @include breakpoint (xs) {
+            padding: 40px 0 50px;
+        }
+    }
+
+    .h1 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 54px;
+        /* identical to box height, or 123% */
+
+        text-align: center;
+        margin-bottom: 40px;
+
+        color: #8A6D2F;
+
+        @include breakpoint (xs) {
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 50px;
+        }
+    }
+
+    form {
+        @include breakpoint (sm) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        margin: 0 auto;
+        width: 100%;
+        max-width: 799px;
+        max-height: 54px;
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        width: 100%;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 54px;
+        padding: 0 36px;
+
+        border-radius: 2px 0px 0px 2px;
+
+        @include breakpoint (xs) {
+            padding: 0 10px;
+            margin-bottom: 5px;
+            border-radius: 2px;
+
+            &::placeholder {
+                text-align: center;
+            }
+        }
+
+        @include breakpoint (sm) {
+            border-radius: 2px;
+
+            &::placeholder {
+                display: flex;
+                font-size: 18px;
+            }
+        }
+    }
+
+    button {
+        min-width: 240px;
+        max-height: 54px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 54px;
+        /* identical to box height, or 180% */
+
+        text-align: center;
+
+        color: #FFFFFF;
+        background: #A8863D;
+        border-radius: 0px 2px 2px 0px;
+
+        padding: 0 36px;
+
+        @include breakpoint (xs) {
+            border-radius: 2px;
+        }
+        @include breakpoint (sm) {
+            border-radius: 2px;
+        }
+    }
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F2F2F2;
+
+    &-inner {
+        max-width: 950px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 0;
+
+        &-p {
+            margin: 32px 0 56px 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 186px;
+        }
+    }
+}
+
+.third {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+
+    &-inner {
+        margin: 80px auto 0;
+        width: 100%;
+        max-width: 940px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-p {
+            margin: 32px 0 38px;
+        }
+
+    }
+
+    img {
+        width: 100%;
+        max-width: 381px;
+    }
+}
+
+.fourth {
+    position: relative;
+    z-index: 2;
+    margin: -290px auto 0;
+    background: #FAC960;
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 58px 0;
+
+        &-h2 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 37px;
+            line-height: 36px;
+            /* identical to box height, or 97% */
+
+            text-align: center;
+
+            color: #8A6D2F;
+        }
+
+        &-p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 30px;
+            /* identical to box height, or 136% */
+
+            text-align: center;
+            margin: 32px 0;
+
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        button {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            /* identical to box height, or 129% */
+
+            text-align: center;
+
+            color: #999999;
+            padding: 0 24px;
+
+            background: #FFFFFF;
+            border: 1px solid #758696;
+            box-sizing: border-box;
+            border-radius: 3px;
+        }
+    }
+}
+
+.footer {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    background: #F2F2F2;
+    padding: 80px 0;
+
+    @include breakpoint (xl) {
+        padding: 40px 0;
+    }
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        a {
+            margin-bottom: 22px;
+
+            @include breakpoint (xs) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &-icons {
+            width: 100%;
+            max-width: 98px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+
+            @include breakpoint (xs) {
+                max-width: 200px;
+                align-items: center;
+            }
+
+            img {
+                width: 100%;
+                max-height: 18px;
+                margin: 0 auto;
+            }
+
+        }
+    }
+}
